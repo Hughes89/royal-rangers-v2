@@ -11,6 +11,7 @@ import TextAreaInput from './Forms/TextAreaInput';
 
 import './AddEvent.css';
 
+// TODO - POSSIBLY SPLIT TO SMALLER COMPONENT(S)
 
 class AddEvent extends Component {
     constructor(props) {
@@ -35,7 +36,7 @@ class AddEvent extends Component {
 
     handleInputChange = (e) => {
         const name = e.target.name;
-        const value = e.target.value.trim();
+        const value = e.target.value.trim().length == 0 ? e.target.value.trim() : e.target.value;
 
         let state = Object.assign({}, this.state[name]);
         state.value = value;
