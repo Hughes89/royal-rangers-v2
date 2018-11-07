@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import LoginPhoto from '../assets/400px-Logo_Royal_Rangers.svg.png';
+
+
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -24,7 +27,7 @@ class Navigation extends Component {
             <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item rr-nav-logo" href="/events">
-                        <img src="https://upload.wikimedia.org/wikipedia/de/thumb/5/51/Logo_Royal_Rangers.svg/400px-Logo_Royal_Rangers.svg.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
+                        <img src={LoginPhoto} alt="Royal Rangers Logo" width="112" height="28" />
                         <span className="rr-navbar-title">Royal Rangers Outpost 5</span>
                     </a>
 
