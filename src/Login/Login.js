@@ -10,10 +10,19 @@ class Login extends Component {
     constructor() {
         super();
         this.state = {
-            username: '',
+            email: '',
             password: '',
             loading: false
         }
+    }
+
+    handleInput = e => {
+        const value = e.target.value;
+        const key = e.target.name;
+
+        this.setState({
+            [key]: value
+        });
     }
 
     toggleLoading() {
@@ -38,7 +47,9 @@ class Login extends Component {
             <div className="rr-login-wrapper">
                 <div className="rr-login-form">
                     <div className="rr-login-title">
-                        <img src={LoginPhoto} />
+                        <img
+                            alt="Royal Rangers Logo" 
+                            src={LoginPhoto} />
                         <h3>Royal Rangers Outpost 5</h3>
                     </div>
                     <div className="rr-login-group">
@@ -52,6 +63,7 @@ class Login extends Component {
                                     placeholder="email@email.com"
                                     value={this.state.username}
                                     name="email"
+                                    onChange={this.handleInput}
                                 />
                             </div>
                         </div>                        
@@ -65,6 +77,7 @@ class Login extends Component {
                                     placeholder="password"
                                     value={this.state.password}
                                     name="password"
+                                    onChange={this.handleInput}
                                 />
                             </div>
                         </div>                          
