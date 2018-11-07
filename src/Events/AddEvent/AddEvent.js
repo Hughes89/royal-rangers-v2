@@ -92,9 +92,10 @@ class AddEvent extends Component {
 
     displayFormIcon() {
         if (this.state.hideForm) {
-            return (<a className="button is-white" aria-label="Show Form" onClick={this.toggleForm}><FontAwesomeIcon icon="plus"></FontAwesomeIcon></a>)
+            return (<a className="button is-white" aria-label="Show Form" title="Show Form" onClick={this.toggleForm}><FontAwesomeIcon icon="plus"></FontAwesomeIcon></a>)
         }
-        return (<a className="button is-white" aria-label="Hide Form" onClick={this.toggleForm}><FontAwesomeIcon icon="minus"></FontAwesomeIcon></a>)
+
+        return (<a className="button is-white" aria-label="Hide Form" title="Hide Form" onClick={this.toggleForm}><FontAwesomeIcon icon="minus"></FontAwesomeIcon></a>)
     }
 
     
