@@ -9,7 +9,7 @@
 2. Run ``npm install``
 3. Split Terminal or Open a second terminal tab
 4. Run ``npm run dev-server`` in one tab **(Must be run first)**
-5. Run ``npm start`` in the other
+5. In the second tab ``cd`` to the cloned repo and run ``npm start``
 
 ## Developer Notes
 
