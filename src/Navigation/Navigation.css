@@ -1,0 +1,21 @@
+.rr-navbar-title {
+    font-weight: bold;
+}
+
+.rr-nav-logo {
+    cursor: default !important;
+}
+
+.rr-nav-logo img {
+    max-height: 2.75rem !important;
+    width: 3rem !important;
+    margin-right: .75rem;
+}
+
+.navbar-burger {
+    height: inherit !important;
+}
+
+.rr-navbar-icon {
+    margin-right: .25rem;
+}
