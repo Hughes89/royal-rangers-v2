@@ -84,7 +84,7 @@ class Login extends Component {
                         <div>
                             <button 
                                 className={this.state.loading ? 'button is-primary is-loading' : 'button is-primary'} 
-                                onClick={this.loginToApplication}>Sign In</button>
+                                onClick={this.loginToApplication}>Log In</button>
                         </div>
                     </div>
                 </div>
