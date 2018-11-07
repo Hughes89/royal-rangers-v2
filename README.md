@@ -5,7 +5,7 @@
 
 ## Installation Instructions
 
-1. Clone Repo
+1. Clone Repo and ``cd royal-rangers-v2``
 2. Run ``npm install``
 3. Split Terminal or Open a second terminal tab
 4. Run ``npm run dev-server`` in one tab **(Must be run first)**
