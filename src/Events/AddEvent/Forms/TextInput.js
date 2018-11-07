@@ -12,7 +12,6 @@ const TextInput = ({ name, label, value, valid, onChange, placeholder, help }) =
                 value={value}
                 onChange={onChange}
                 name={name}
-                rows="4"
             />
         </div>
         <p className="help">{help}</p>
