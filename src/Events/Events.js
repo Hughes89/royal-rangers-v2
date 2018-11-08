@@ -23,7 +23,11 @@ class Events extends Component {
         this.setState({ loading: true });
 
         axios.get('/api/events')
-            .then(res => this.setState({ events: res.data, loading:false }))
+            .then(res => this.setState({ events: res.data.map(event => {
+                event.start = new Date(event.start);
+                event.end = new Date(event.end);
+                return event;
+            }), loading:false }))
             .catch(error => this.setState({ error, loading: false }));
     }
 
